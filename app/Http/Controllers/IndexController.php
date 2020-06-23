@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
+use App\Jobs\SendMailContact;
 use App\Models\Contact;
 use Throwable;
 
@@ -21,13 +22,11 @@ class IndexController {
     }
 
     public function formContact(ContactRequest $request){
-        $contact = $this->contact->createContact($request);
         try {
+            $contact = $this->contact->createContact($request);
             $contact->save();
-//            $this->contact->sendMailBack($contact);
-            $this->contact->sendMailClient($contact);
+            dispatch(new SendMailContact($contact));
             return back()->with(['success' => 'Merci ! Vous allez bientôt recevoir un mail de confirmation concernant la transmission de vos informations.']);
-
         } catch (Throwable $e) {
             report($e);
             return back()->with(['error' => 'Erreur ! Il y a eu une erreur lors de l\'envoi de vos informations. Veuillez réessayer ultérieurement.']);

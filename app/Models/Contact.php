@@ -53,16 +53,18 @@ class Contact extends Model
      *  Envoi d'un mail du coter de smartmoov ou l'assurance contenant les informations que le client à transmis pour un devis
      **/
     public function sendMailBack($contact){
+
         $mj = Mailjet::getClient();
         $body = [
             'FromEmail' => "stephane.pau@smartmoov.solutions",
             'FromName' => "????????",
-            'Subject' => "Nouvelle demande d'information pour un devis",
+            'Subject' => "Nouvelle demande de devis",
+            'MJ-TemplateID' => '1516763',
             'MJ-TemplateLanguage' => true,
-            'Html-part' => "<h2 style='text-align: center'>Un nouveau client souhaite des informations concernant l'assurance !</h2><br />Voici les informations fournies par le client : <br><br> <b>Nom de l'auto-école : </b> $contact->ds_name<br><b>Prénom : </b> $contact->firstname<br><b>Nom : </b>$contact->lastname<br><b>Email : </b>$contact->email<br><b>Numéro de téléphone : </b>$contact->phone<br><b>Nombre de véhicule : </b>$contact->nb_vehicle ",
             'Recipients' => [
-                ['Email' => "?????"],
-            ]
+                ['Email' => "stephane.pau@smartmoov.solutions"],
+            ],
+            'Vars' => json_decode($contact, true)
         ];
         $response =  $mj->post(Resources::$Email, ['body' => $body]);
         $response->success() && var_dump($response->getData());
@@ -80,7 +82,7 @@ class Contact extends Model
             'MJ-TemplateLanguage' => true,
             "MJ-TemplateID" => '1516321',
             'Recipients' => [
-                ['Email' => "$contact->email", 'Name' => $contact->name]
+                ['Email' => "stephane.pau@smartmoov.solutions", 'Name' => $contact->name]
             ]
         ];
         $response =  $mj->post(Resources::$Email, ['body' => $body]);

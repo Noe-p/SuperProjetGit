@@ -12,8 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <link rel="stylesheet" type="text/css" href="css/index_mobile.css" media="screen and (max-width: 800px)" />
-
-
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
