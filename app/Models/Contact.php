@@ -62,7 +62,7 @@ class Contact extends Model
             'MJ-TemplateID' => '1516763',
             'MJ-TemplateLanguage' => true,
             'Recipients' => [
-                ['Email' => "stephane.pau@smartmoov.solutions"],
+                ['Email' => "bellour.killian@gmail.com"],
             ],
             'Vars' => json_decode($contact, true)
         ];
@@ -82,12 +82,10 @@ class Contact extends Model
             'MJ-TemplateLanguage' => true,
             "MJ-TemplateID" => '1516321',
             'Recipients' => [
-                ['Email' => "stephane.pau@smartmoov.solutions", 'Name' => $contact->name]
+                ['Email' => "$contact->email", 'Name' => $contact->name]
             ]
         ];
         $response =  $mj->post(Resources::$Email, ['body' => $body]);
         $response->success() && var_dump($response->getData());
     }
-
-
 }
