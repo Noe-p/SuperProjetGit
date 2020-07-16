@@ -174,7 +174,7 @@
                                 @csrf
                                 <div class="form-group">
                                     <label class="form-group has-float-label">
-                                        <input type="text" class="form-control" id="ds-name" name="ds_name" aria-describedby="ds-name" value="cc" required>
+                                        <input type="text" class="form-control" id="ds-name" name="ds_name" aria-describedby="ds-name" required>
                                         <span style="font-size: 15px">Nom de l'auto-école *</span>
                                     </label>
                                 </div>
@@ -182,7 +182,7 @@
                                     <div class="col">
                                         <div class="form-group">
                                             <label class="form-group has-float-label">
-                                                <input type="text"  class="form-control" id="firstname" name="firstname" aria-describedby="firstname" value="cc" required>
+                                                <input type="text"  class="form-control" id="firstname" name="firstname" aria-describedby="firstname" required>
                                                 <span style="font-size: 15px">Prénom *</span>
                                             </label>
 
@@ -191,7 +191,7 @@
                                     <div class="col">
                                         <div class="form-group">
                                             <label class="form-group has-float-label">
-                                                <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="lastname" value="cc" required>
+                                                <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="lastname" required>
                                                 <span style="font-size: 15px">Nom *</span>
                                             </label>
                                         </div>
@@ -199,19 +199,19 @@
                                 </div>
                                 <div class="form-group">
                                     <label class="form-group has-float-label">
-                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="email" value="rajipe3087@unomail9.com" required>
+                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="email" required>
                                         <span style="font-size: 15px">Email *</span>
                                     </label>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-group has-float-label">
-                                        <input type="tel" class="form-control" id="phone" name="phone" aria-describedby="phone" value="0695978804" required>
+                                        <input type="tel" class="form-control" id="phone" name="phone" aria-describedby="phone" required>
                                         <span style="font-size: 15px">Numéro de téléphone *</span>
                                     </label>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-group has-float-label">
-                                        <input type="number" class="form-control" id="nb-vehicle" name="nb_vehicle" aria-describedby="nb-vehicle" value="0" required>
+                                        <input type="number" class="form-control" id="nb-vehicle" name="nb_vehicle" aria-describedby="nb-vehicle" required>
                                         <span style="font-size: 15px">Nombre de véhicules *</span>
                                     </label>
                                 </div>
