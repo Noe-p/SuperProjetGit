@@ -57,7 +57,7 @@ class Contact extends Model
         $mj = Mailjet::getClient();
         $body = [
             'FromEmail' => "stephane.pau@smartmoov.solutions",
-            'FromName' => "????????",
+            'FromName' => "Assurance Conduite",
             'Subject' => "Nouvelle demande de devis",
             'MJ-TemplateID' => '1516763',
             'MJ-TemplateLanguage' => true,
@@ -77,7 +77,7 @@ class Contact extends Model
         $mj = Mailjet::getClient();
         $body = [
             'FromEmail' => "stephane.pau@smartmoov.solutions",
-            'FromName' => "????????",
+            'FromName' => "Assurance Conduite",
             'Subject' => "Votre demande à bien été transmise",
             'MJ-TemplateLanguage' => true,
             "MJ-TemplateID" => '1516321',
