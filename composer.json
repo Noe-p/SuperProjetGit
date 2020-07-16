@@ -17,7 +17,6 @@
         "laravel/tinker": "^2.0",
         "thedoctor0/laravel-mailjet-driver": "^1.0",
         "ext-json": "*",
-        "ext-http": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
