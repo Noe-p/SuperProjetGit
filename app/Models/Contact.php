@@ -56,13 +56,13 @@ class Contact extends Model
 
         $mj = Mailjet::getClient();
         $body = [
-            'FromEmail' => "stephane.pau@smartmoov.solutions",
+            'FromEmail' => "contact@assurance-conduite.fr",
             'FromName' => "Assurance Conduite",
             'Subject' => "Nouvelle demande de devis",
             'MJ-TemplateID' => '1516763',
             'MJ-TemplateLanguage' => true,
             'Recipients' => [
-                ['Email' => "bellour.killian@gmail.com"],
+                ['Email' => "contact@assurance-conduite.fr"],
             ],
             'Vars' => json_decode($contact, true)
         ];
@@ -76,7 +76,7 @@ class Contact extends Model
     public function sendMailClient($contact){
         $mj = Mailjet::getClient();
         $body = [
-            'FromEmail' => "stephane.pau@smartmoov.solutions",
+            'FromEmail' => "contact@assurance-conduite.fr",
             'FromName' => "Assurance Conduite",
             'Subject' => "Votre demande à bien été transmise",
             'MJ-TemplateLanguage' => true,

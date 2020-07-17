@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Site d'assurance pour les auto-école, demandez votre devis GRATUITETEMENT et RAPIDEMENT">
-    <title>ASSURAE</title>
+    <meta name="description" content="Site d'assurance pour les auto-écoles, demandez votre devis GRATUITETEMENT et RAPIDEMENT">
+    <title>Assurance Conduite</title>
+    <link rel="icon" href="{{ URL::asset('img/assur.png') }}" type="image/x-icon"/>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -16,7 +17,7 @@
 <body>
 <nav class="navbar navbar-expand-lg">
     <div class="container-xl" >
-        <a class="navbar-brand" href="#"><b>ASSURAE.FR</b></a>
+        <a class="navbar-brand" href="#"><b>ASSURANCE CONDUITE</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -254,7 +255,7 @@
 <footer class="container py-2">
     <div class="row">
         <div class="col-12 col-md">
-            <a class="text-muted" href="#" style="color: black"><b>ASSURAE.FR</b></a>
+            <a class="text-muted" href="#" style="color: black"><b>ASSURANCE CONDUITE</b></a>
             <small class="d-block mb-3 text-muted">&copy; 2020</small>
         </div>
         <div class="col-6 col-sm">
