@@ -53,7 +53,6 @@ class Contact extends Model
      *  Envoi d'un mail du coter de smartmoov ou l'assurance contenant les informations que le client à transmis pour un devis
      **/
     public function sendMailBack($contact){
-
         $mj = Mailjet::getClient();
         $body = [
             'FromEmail' => "contact@assurance-conduite.fr",

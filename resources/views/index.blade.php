@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="col-5">
-            <img src="img/assur.png">
+            <img src="{{asset('img/assur.png')}}">
         </div>
         <div style="text-align: center" id="assurance-mobile">
             <h2>Une assurance que vous construisez selon vos <br/>besoins, et toujours à vos côtés.</h2>

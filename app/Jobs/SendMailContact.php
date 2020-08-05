@@ -15,10 +15,11 @@ class SendMailContact implements ShouldQueue
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     private $contact;
+
     /**
      * Create a new job instance.
      *
-     * @return void
+     * @param Contact $contact
      */
     public function __construct(Contact $contact)
     {
