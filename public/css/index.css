@@ -17,6 +17,12 @@ body{
 a{
     color: black;
 }
+.nav-footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 10px;
+}
 a:hover{
     color:black;
     text-decoration:none;
@@ -91,7 +97,7 @@ hr{
 }
 .align-center{
     text-align: center;
-    margin:0 70px;
+    margin:0 90px;
 }
 .navbar-collapse{
     justify-content: flex-end;
@@ -213,7 +219,7 @@ hr{
 }
 #tarifs h5{
     color: #5e5e5e;
-    margin-top: 3%
+    margin-top: 20px;
 }
 .money{
     height: 80%;
@@ -252,7 +258,11 @@ hr{
     height: 50%;
     width: 50%
 }
-
+.div-money{
+    display:flex;
+    margin-right: 230px;
+    margin-left:-100px;
+}
 #devis{
     background:#f5f3f5;
     padding-top: 60px;

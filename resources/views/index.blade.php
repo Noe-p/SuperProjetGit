@@ -183,17 +183,18 @@
             <img src="img/car_security.png" class="car-security">
             <div class="container">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="div-money">
                         <img src="img/money.png" class="money">
+                        <div>
+                           <p>À partir de :</p>
+                           <p>??????????</p>
+                        </div>
                     </div>
-                    <div class="col little-text text-left" id="a-partir">
-                        <p>À partir de :</p>
-                        <p>??????????</p>
-                    </div>
-                    <div class="col little-text text-left">
+                    <div>
                         <p>Jusqu'à :</p>
                         <p><b>30% Moins cher</b></p>
                     </div>
+
                 </div>
             </div>
             <div class="justify-content-center">
@@ -384,18 +385,10 @@
                 <p class="text-2020">&copy; 2020</p>
             </div>
             <div class="nav-footer">
-            <div class="col-6 col-sm text-footer">
                 <a href="#formules">Les formules</a>
-            </div>
-            <div class="col-6 col-sm text-footer">
                 <a href="#tarifs">Nos tarifs</a>
-            </div>
-            <div class="col-6 col-sm text-footer">
                 <a href="#engagement">Notre engagement</a>
-            </div>
-            <div class="col-6 col-sm text-footer">
                 <a href="#qui-sommes-nous">Qui sommes-nous ?</a>
-            </div>
             </div>
         </div>
     </footer>

@@ -152,10 +152,14 @@
         height: 200px;
         width: 200px;
     }
-
+    .text-2020{
+        display:none;
+    }
+    .footer-logo{
+        display:none;
+    }
     #tarifs{
         background:#84aa72;
-        padding: 5%;
     }
     #tarifs h1{
         color: white;
@@ -172,34 +176,43 @@
         font-size: 20px;
         color: #5e5e5e;
     }
+
     #tarifs button{
-        width:100%;
-        color: #5e5e5e;
-        background: #fffff2;
+        width:50%;
+        color: white;
+        background: #003E1F;
         margin-top: 4%;
-        border-color: white;
+        border-color: solid 2px transparent;
         border-radius: 50px;
         padding: 10px;
     }
+    .div-money{
+        margin:0;
+    }
     #tarifs button:hover{
-        background: #5e5e5e ;
-        color: #fffff2;
+        background: transparent ;
+        color:white;
     }
     #tarifs .col-2{
         text-align: right;
     }
     .money{
-        height: 40%;
-        width: 70%;
+        width: 70px;
     }
     .car-security{
         width:100%;
+    }
+    #tarifs .container{
+        padding-left:0;
     }
     #tarifs .row{
         display:flex;
         flex-direction:row;
         justify-content:space-between;
-        }
+        font-size:20px;
+        text-align:center;
+
+    }
     #a-partir{
         text-align: left;
     }
@@ -298,7 +311,6 @@
 
     #qui-sommes-nous{
         background:#c2a895;
-        padding: 10%;
     }
     #qui-sommes-nous h1{
         color: #5e5e5e;
@@ -323,6 +335,8 @@
     .nav-footer{
         display:flex;
         flex-wrap: wrap;
+        width:100%;
+        margin:0 20px;
     }
     footer{
         display:flex;
