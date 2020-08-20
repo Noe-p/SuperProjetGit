@@ -23,7 +23,7 @@
     <nav class="navbar fixed-top navbar-expand-lg">
             <a class="navbar-brand" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:serif="http://www.serif.com/" width="90%" height="90%" viewBox="0 0 6168 1500" version="1.1"
+                    xmlns:serif="http://www.serif.com/" width="250px" height="100%" viewBox="0 0 6168 1500" version="1.1"
                     xml:space="preserve"
                     style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
                     <g transform="matrix(1.81289,0,0,1.81289,-683.796,-609.667)">

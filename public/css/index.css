@@ -45,6 +45,7 @@ h4{
 }
 .big-text{
     font-size:30px;
+
 }
 .navbar-toggler{
     color:white;
@@ -58,6 +59,7 @@ hr{
     background-color: #929292;
     border: none; /*on supprime le style par défaut*/
 }
+
 .navbar{
     background: #0076ba;
     padding:0;
@@ -143,12 +145,15 @@ hr{
     justify-content:center;
     align-items:flex-end;
     flex-direction:column;
+    padding-left:40px;
 }
 #assurance .col-5{
     display:flex;
     justify-content:center;
     align-items:center;
+    margin-right:70px;
 }
+
 #assurance-mobile{
     display: none;
 }
@@ -359,3 +364,6 @@ footer p {
     flex-direction:row;
     justify-content: space-between;
 }
+
+
+  
