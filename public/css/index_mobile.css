@@ -31,7 +31,7 @@
         display: none;
     }
     h4{
-        font-size: 35px;
+        font-size: 25px;
         color: #929292;
         margin-top: 10px;
         margin-bottom: 50px;
@@ -67,6 +67,7 @@
     }
     .align-center{
         text-align: center;
+        margin:13px;
     }
 
     #assurance{
@@ -144,11 +145,11 @@
     }
     #formules .demande{
         color: #929292;
-        font-size:40px;
+        font-size:30px;
     }
     .list-picture{
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
     }
     .text-2020{
         display:none;
@@ -183,6 +184,7 @@
     #tarifs button{
         width:60%;
         color: white;
+        font-size:15px;
         background: #003E1F;
         margin-top: 4%;
         border-color: solid 2px transparent;
@@ -200,7 +202,7 @@
         text-align: right;
     }
     .money{
-        width: 70px;
+        width: 50px;
     }
     .car-security{
         width:100%;
@@ -212,7 +214,7 @@
         display:flex;
         flex-direction:row;
         justify-content:space-between;
-        font-size:20px;
+        font-size:15px;
         text-align:center;
 
     }
@@ -265,6 +267,7 @@
         width:50%;
         color: white;
         border-color: white;
+        font-size:15px;
         border-radius: 50px;
         padding: 10px
     }
