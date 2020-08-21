@@ -154,7 +154,7 @@
                 <hr>
                 <div class="col">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        xmlns:serif="http://www.serif.com/" width="125px" height="100%" viewBox="0 0 600 600"
+                        xmlns:serif="http://www.serif.com/" width="115px" height="115px" viewBox="0 0 600 600"
                         version="1.1" xml:space="preserve"
                         style="color:#0076ba;fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
                         <g transform="matrix(1.46805,0,0,1.50135,-170.511,-96.7326)">
