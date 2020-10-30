@@ -79,9 +79,12 @@ class Contact extends Model
             'FromName' => "Assurance Conduite",
             'Subject' => "Votre demande à bien été transmise",
             'MJ-TemplateLanguage' => true,
-            "MJ-TemplateID" => '1516321',
+            "MJ-TemplateID" => '1835726',
             'Recipients' => [
-                ['Email' => "$contact->email", 'Name' => $contact->name]
+                [
+                    'Email' => "$contact->email",
+                    'Name' => $contact->name
+                ]
             ]
         ];
         $response =  $mj->post(Resources::$Email, ['body' => $body]);
