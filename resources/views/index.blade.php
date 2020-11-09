@@ -221,7 +221,8 @@
                         <img src="img/money.png" class="money">
                         <div>
                             <p>À partir de :</p>
-                            <p>??????????</p>
+                            <p>33€/mois par véhicule *</p>
+                            <p style="font-size: 14px"><b>Frais de dossier offert</b></p>
                         </div>
                     </div>
                     <div>
@@ -236,7 +237,7 @@
                     data-target="#form-contact">
                     <b>Je veux connaître mon tarif !</b>
                 </button>
-                <h5>Exemple donné pour un véhicule Citroen C3 de 2019</h5>
+                <h5>*Si respect des conditions de tarification imposées par la compagnie</h5>
             </div>
         </div>
     </div>
