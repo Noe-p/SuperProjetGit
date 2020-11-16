@@ -61,7 +61,7 @@ class Contact extends Model
             'MJ-TemplateID' => '1516763',
             'MJ-TemplateLanguage' => true,
             'Recipients' => [
-                ['Email' => "contact@assurance-conduite.fr"],
+                ['Email' => "contact@smartmoov.solutions"],
             ],
             'Vars' => json_decode($contact, true)
         ];
