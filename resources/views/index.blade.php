@@ -7,7 +7,7 @@
     <meta name="description"
         content="Site d'assurance pour les auto-écoles, demandez votre devis GRATUITETEMENT et RAPIDEMENT">
     <title>Assurance Conduite</title>
-    <link rel="icon" href="{{ URL::asset('img/favicon.ico') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -15,8 +15,8 @@
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/tonystar/bootstrap-float-label/v4.0.2/bootstrap-float-label.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/index_mobile.css" media="screen and (max-width: 800px)" />
+    <link rel="stylesheet" type="text/css" href="{{asset('css/index.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('css/index_mobile.css')}}" media="screen and (max-width: 800px)" />
 </head>
 
 <body>
@@ -142,14 +142,25 @@
             </div>
         </div>
         @endif
+        @if ($errors->any())
+            <div class="container" style="margin-top: 3%">
+                <div class="alert">
+                    <div class="alert alert-danger" role="alert" style="text-align: center">
+                        @foreach ($errors->all() as $error)
+                            @if(stristr($error,'captcha'))
+                                Le Captcha renseigné n'est pas correct, veuillez réessayer.
+                            @endif
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        @endif
     </div>
 
     <div style="" id="formules">
         <div class="align-center">
             <p class="big-title">Différentes formules, différents prix</p>
-            <p class="big-text">Nos assurances sont créées <b>sur mesure</b>. Trouvez celle qui <b>correspond à vos
-                    besoins</b> dès
-                aujourd’hui.</p>
+            <p class="big-text">Nos assurances sont créées <b>sur mesure</b>. Trouvez celle qui <b>correspond à vos besoins</b> dès aujourd’hui.</p>
             <div class="row">
                 <hr>
                 <div class="col">
@@ -214,11 +225,11 @@
         <div class="align-center">
             <p class="big-title">Nos offres sont-elles moins chères ? Oui, elles le sont !</p>
             <p class="big-text">Nos offres sont <b>les moins chères du marché</b> et elles comptent bien le rester.</p>
-            <img src="img/car_security.png" class="car-security">
+            <img src="{{asset('img/car_security.png')}}" class="car-security">
             <div class="container">
                 <div class="row">
                     <div class="div-money">
-                        <img src="img/money.png" class="money">
+                        <img src="{{asset('img/money.png')}}" class="money">
                         <div>
                             <p>À partir de :</p>
                             <p>33€/mois par véhicule *</p>
@@ -248,7 +259,7 @@
             <p class="big-text">Notre équipe répond à vos questions et <b>vous accompagne au quotidien !</b> <br />Vous
                 pouvez toujours compter sur
                 nous.</p>
-            <img src="img/help.png">
+            <img src="{{asset('img/help.png')}}">
         </div>
     </div>
 
@@ -273,7 +284,7 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <div class="modal-body">
-                                <form method="POST" action="/devis">
+                                <form method="POST" action="{{url('/devis')}}">
                                     @csrf
                                     <div class="form-group">
                                         <label class="form-group has-float-label">
@@ -324,11 +335,21 @@
                                             <span style="background-color:white;font-size: 15px">Nombre de véhicules *</span>
                                         </label>
                                     </div>
-                                    <small id="help" class="form-text text-muted">Les champs suivis d’une * sont
-                                        obligatoires.</small>
+                                    <div class="form-group">
+                                        <div class="captcha">
+                                            <span>{!! captcha_img() !!}</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-group has-float-label">
+                                            <input id="captcha" type="text" class="form-control" placeholder="" name="captcha">
+                                            <span>Entrer le captcha *</span>
+                                        </label>
+                                    </div>
+                                    <small id="help" class="form-text text-muted">Les champs suivis d’une * sont obligatoires.</small>
                                     <div class="row" style="">
                                         <div class="col">
-                                            <img class="img-modal" src="img/men_whith_letter.png">
+                                            <img class="img-modal" src="{{asset('img/men_whith_letter.png')}}">
                                         </div>
                                         <div class="col">
                                             <button id="send-form" type="submit" class="btn btn-outline ">
@@ -336,7 +357,7 @@
                                             </button>
                                         </div>
                                         <div class="col">
-                                            <img class="img-modal" src="img/post_box.png">
+                                            <img class="img-modal" src="{{asset('img/post_box.png')}}">
                                         </div>
                                     </div>
                                 </form>
@@ -356,7 +377,7 @@
                 Fidèles à nos <b>valeurs humaines</b> et forts de notre <b>expérience professionnelle</b>,<br>
                 nous avons à cœur votre satisfaction.
             </p>
-            <img src="img/adviser.png">
+            <img src="{{asset('img/adviser.png')}}">
         </div>
     </div>
 
@@ -430,15 +451,9 @@
         </div>
     </footer>
     <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 
 </html>
