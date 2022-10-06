@@ -388,6 +388,10 @@
                 <input type="text" id="name" name="user_name">
             </div>
             <div class="form-input">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="user_name">
+            </div>
+            <div class="form-input">
                 <label for="mail">E-mail</label>
                 <input type="email" id="mail" name="user_mail">
             </div>
