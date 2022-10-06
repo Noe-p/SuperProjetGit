@@ -142,7 +142,7 @@
             </div>
         </div>
         @endif
-        @if ($errors->any())
+        <!-- @if ($errors->any())
             <div class="container" style="margin-top: 3%">
                 <div class="alert">
                     <div class="alert alert-danger" role="alert" style="text-align: center">
@@ -154,7 +154,7 @@
                     </div>
                 </div>
             </div>
-        @endif
+        @endif -->
     </div>
 
     <div style="" id="formules">
@@ -335,7 +335,7 @@
                                             <span style="background-color:white;font-size: 15px">Nombre de véhicules *</span>
                                         </label>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <div class="captcha">
                                             <span>{!! captcha_img() !!}</span>
                                         </div>
@@ -345,7 +345,7 @@
                                             <input id="captcha" type="text" class="form-control" placeholder="" name="captcha">
                                             <span>Entrer le captcha *</span>
                                         </label>
-                                    </div>
+                                    </div> -->
                                     <small id="help" class="form-text text-muted">Les champs suivis d’une * sont obligatoires.</small>
                                     <div class="row" style="">
                                         <div class="col">
