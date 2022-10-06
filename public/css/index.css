@@ -365,6 +365,11 @@ hr{
     display: flex;
     flex-direction: column;
 }
+
+.form-button{
+    margin: 30px;
+}
+
 .footer-logo{
     width:200px;
 }
