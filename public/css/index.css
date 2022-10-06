@@ -133,7 +133,7 @@ hr{
     color: white;
 }
 #assurance img{
-    width: 350px;
+    width: 100%;
 
 }
 #assurance h2{
@@ -152,7 +152,7 @@ hr{
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-right:70px;
+    /* margin-right:70px; */
 }
 
 #assurance-mobile{
