@@ -383,18 +383,21 @@
 
     <div style ="" id="formulaire">
         <form action="/ma-page-de-traitement" method="post">
-        <div class="form-input">
-            <label for="name">Nom </label>
-            <input type="text" id="name" name="user_name">
-        </div>
-        <div class="form-input">
-            <label for="mail">E-mail</label>
-            <input type="email" id="mail" name="user_mail">
-        </div>
-        <div class="form-input">
-            <label for="msg">Message</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </div>
+            <div class="form-input">
+                <label for="name">Nom </label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div class="form-input">
+                <label for="mail">E-mail</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            <div class="form-input">
+                <label for="msg">Message</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div class="form-button">
+                <button type="submit">Envoyer</button>
+            </div>
         </form>
     </div>
 
