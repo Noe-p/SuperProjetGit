@@ -381,6 +381,23 @@
         </div>
     </div>
 
+    <div style ="" id="formulaire">
+        <form action="/ma-page-de-traitement" method="post">
+        <div class="form-input">
+            <label for="name">Nom </label>
+            <input type="text" id="name" name="user_name">
+        </div>
+        <div class="form-input">
+            <label for="mail">E-mail</label>
+            <input type="email" id="mail" name="user_mail">
+        </div>
+        <div class="form-input">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
+        </form>
+    </div>
+
     <footer class="py-2">
         <div class="row">
             <div class="col-12 col-md">
